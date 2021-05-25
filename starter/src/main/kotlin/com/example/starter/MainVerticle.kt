@@ -37,7 +37,7 @@ class MainVerticle : AbstractVerticle() {
       // Handle every request using the router
       .requestHandler(router)
       // Start listening
-      .listen(8887)
+      .listen(8888)
       // Print the port
       .onSuccess { server ->
         println("HTTP server started on port " + server.actualPort())
