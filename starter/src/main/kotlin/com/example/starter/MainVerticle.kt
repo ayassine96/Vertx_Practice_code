@@ -34,7 +34,7 @@ class MainVerticle : AbstractVerticle() {
 
     // Create the HTTP server
     vertx.createHttpServer()
-      // Handle every request using the router
+      // Handle every request using the router we setup earlier
       .requestHandler(router)
       // Start listening
       .listen(8888)
